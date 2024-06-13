@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlfaTech</title>
+    <link rel="icon" href="/assets/big-tech.png">
+    <style>
+                :root {
+            --azul-fundo: #2f86d6;
+            --azul-tabela: rgba(47,134,214, 1);
+            --cinza: #23303E;
+            --branco1: #F1F3F7;
+            --branco2: #f1f3f7;
+            --cinz1a: #acaec0;
+        }
+        * {
+            margin: 0;
+            font-family: Arial;
+        }
+        section {
+            width: 100vw;
+        }
+        ul {
+            display: flex;
+            justify-content: space-around;
+            width: 40%;
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        h1 {
+            font-weight: bold;
+            font-size: 30px;
+        }
+        p {
+            line-height: 25px;
+        }
+        .container {
+            margin: 0 auto;
+            width: 1024px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header {
+            padding: 35px 0;
+            background: var(--azul-fundo);
+        }
+        header .container{
+            .ico {
+                display: flex;
+                align-items: center;
+            }
+            .texto {
+                margin-left: 10px;
+            }
+        }
+
+
+        footer {
+            background: var(--branco2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        #info {
+            background: var(--azul-fundo);
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                height: 150px;
+                padding: 50px 0;
+                .ico {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+        #tabela {
+            padding: 100px 0;
+            .container {
+                width: 1200px;
+            }
+        }
+        table {
+            width: 100%;
+        }
+        th {
+            background: var(--branco2);
+            padding: 20px 30px;
+            font-weight: bold;
+        }
+        th p {
+            color: var(--cinz1a);
+            font-size: 12px;
+        }
+        td {
+            padding: 20px 25px;
+            font-size: 12px;
+            text-align: center;
+            box-shadow: 1px 1px 1px 0px var(--branco1);
+        }
+        .classe {
+            background: var(--branco2);
+            text-align: start;
+            font-weight: bold;
+        }
+        .bt {
+            background: var(--azul-fundo);
+            height: 15px;
+            width: 15px;
+            border-radius: 50px;
+            align-self: center;
+        }
+        .bt-cont {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="ico">
+                <img src="/assets/logo-icone-escuro.png" alt="Icon Img" style="width: 80px;">
+                <div class="texto">
+                    <h1>
+                    AlfaTech
+                </h1>
+                <p style="color: white;">
+                    Soluções em hospedagem
+                </p>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="index.html#info">INFORMAÇÕES</a>
+                </li>
+                <li>
+                    <a href="#tabela">PLANOS</a>
+                </li>
+                <li>
+                    <a href="index.html#contato">CONTATO</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section id="tabela">
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="background: none;"></th>
+                        <th>
+                            <p>
+                                PESSOAL
+                            </p>
+                            <h1>
+                                GRÁTIS
+                            </h1>
+                        </th>                      
+                        <th>
+                            <p>
+                                PROFISSIONAL
+                            </p>
+                            <h1>
+                                R$29
+                            </h1>
+                        </th>
+                        <th>
+                            <p>
+                                    EMPRESARIAL
+                            </p>
+                            <h1>
+                                R$59
+                            </h1>
+                        </th>
+                        <th>
+                            <p>
+                                BIG TECHS
+                            </p>
+                            <h1>
+                                R$99
+                            </h1>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="classe">MONITORAMENTO DE REDE</td>
+                        <td>3 REDES</td>
+                        <td>10 REDES</td>
+                        <td>20 REDES</td>
+                        <td>50 REDES</td>
+                    </tr>
+                    <tr>
+                        <td class="classe">DASHBOARD</td>
+                        <td>1 DASHBOARD</td>
+                        <td>5 DASHBOARDS</td>
+                        <td>10 DASHBOARDS</td>
+                        <td>25 DASHBOARDS</td>
+                    </tr>
+                    <tr>
+                        <td class="classe">USUÁRIOS</td>
+                        <td>1 USUÁRIO</td>
+                        <td>5 USUÁRIOS</td>
+                        <td>10 USUÁRIOS</td>
+                        <td>25 USUÁRIOS</td>
+                    </tr>
+                    <tr>
+                        <td class="classe">RELATÓRIO DE ATUALIZAÇÃO</td>
+                        <td>TODA HORA</td>
+                        <td>A CADA 30 MINUTOS</td>
+                        <td>QUASE EM TEMPO REAL</td>
+                        <td>TEMPO REAL*</td>
+                    </tr>
+                    <tr>
+                        <td class="classe">RELATÓRIO DE EMAILS</td>
+                        <td><div class="bt-cont"><div class="bt"><div><div></td>
+                        <td><div class="bt-cont"><div class="bt"><div><div></td>
+                        <td><div class="bt-cont"><div class="bt"><div><div></td>
+                        <td><div class="bt-cont"><div class="bt"><div><div></td>
+                    </tr>
+                    <tr>
+                        <td class="classe">TRANSAÇÃO ILIMITADAS</td>
+                        <td><div class="bt-cont"><div class="bt"><div><div></td>
+                        <td><div class="bt-cont"><div class="bt"><div><div></td>
+                        <td><div class="bt-cont"><div class="bt"><div><div></td>
+                        <td><div class="bt-cont"><div class="bt"><div><div></td>
+                    </tr>
+                    <tr>
+                        <td class="classe">RASTREADOR DE PAGAMENTO</td>
+                        <td><div class="bt-cont"><div class="bt"><div><div></td>
+                        <td><div class="bt-cont"><div class="bt"><div><div></td>
+                        <td><div class="bt-cont"><div class="bt"><div><div></td>
+                        <td><div class="bt-cont"><div class="bt"><div><div></td>
+                    </tr>
+                    <tr>
+                        <td class="classe">EXPORTAÇÃO DE DADOS</td>
+                        <td><div class="bt-cont"><div class="bt"><div><div></div></td>
+                        <td><div class="bt-cont"><div class="bt"><div><div></div></td>
+                        <td><div class="bt-cont"><div class="bt"><div><div></div></td>
+                        <td><div class="bt-cont"><div class="bt"><div><div></td>
+                    </tr>
+                    <tr>
+                        <td class="classe">CONVERSOR DE MOEDA</td>
+                        <td></td>
+                        <td><div class="bt-cont"><div class="bt"><div><div></div></td>
+                        <td><div class="bt-cont"><div class="bt"><div><div></div></td>
+                        <td><div class="bt-cont"><div class="bt"><div><div></td>
+                    </tr>
+                    <tr>
+                        <td class="classe">ACESSO A API</td>
+                        <td></td>
+                        <td><div class="bt-cont"><div class="bt"><div><div></div></td>
+                        <td><div class="bt-cont"><div class="bt"><div><div></div></td>
+                        <td><div class="bt-cont"><div class="bt"><div><div></td>
+                    </tr>
+                    <tr>
+                        <td class="classe">RESTRIÇÃO DE IP</td>
+                        <td></td>
+                        <td></td>
+                        <td><div class="bt-cont"><div class="bt"><div><div></div></td>
+                        <td><div class="bt-cont"><div class="bt"><div><div></td>
+                    </tr>
+                    <tr>
+                        <td class="classe">FEED PERSONALIZADO</td>
+                        <td></td>
+                        <td></td>
+                        <td><div class="bt-cont"><div class="bt"><div><div></div></td>
+                        <td><div class="bt-cont"><div class="bt"><div><div></td>
+                    </tr>
+                    <tr>
+                        <td class="classe">LIMITE DE IMPORTAÇÃO DE DADOS</td>
+                        <td>ÚLTIMO ANO</td>
+                        <td>ÚLTIMOS 2 ANOS</td>
+                        <td>ÚLTIMOS 3 ANOS</td>
+                        <td>ÚLTIMOS 3 ANOS</td>
+                    </tr>
+                    <tr>
+                        <td class="classe">RETENÇÃO DE DADOS</td>
+                        <td>TEMPO DE VIDA</td>
+                        <td>TEMPO DE VIDA</td>
+                        <td>TEMPO DE VIDA</td>
+                        <td>TEMPO DE VIDA</td>
+                    </tr>
+                    <tr>
+                        <td class="classe">SUPORTE</td>
+                        <td>EMAIL</td>
+                        <td>EMAIL & CHAT</td>
+                        <td>EMAIL & CHAT</td>
+                        <td>EMAIL, CHAT & VOICE</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+    </section>
+    <section id="info">
+        <div class="container">
+            <div class="ico">
+                <img src="/assets/logo-icone-escuro.png" alt="Icon Img" style="width: 80px;">
+                <div class="texto">
+                    <h1>
+                    AlfaTech
+                </h1>
+                <p style="color: white;">
+                    Soluções em hospedagem
+                </p>
+                </div>
+            </div>
+            <p style="color: white;">
+                © AlfaTech - Soluções em hospedagem - Todos os direitos reservados
+            </p>
+        </div>
+    </section>
+    <footer>
+        <p>
+            Desenvolvido por <span style="color: var(--azul-fundo);">Majuste & Renan</span>
+        </p>
+    </footer>
+</body>
+</html>

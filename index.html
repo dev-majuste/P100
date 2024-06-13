@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlfaTech</title>
+    <link rel="icon" href="/assets/big-tech.png">
+    <style>
+        :root {
+            --azul-fundo: #2f86d6;
+            --azul-tabela: rgba(47,134,214, 1);
+            --cinza: #23303E;
+            --branco1: #F1F3F7;
+            --branco2: #f1f3f7;
+            --cinz1a: #acaec0;
+        }
+        * {
+            margin: 0;
+            font-family: Arial;
+        }
+        section {
+            width: 100%;
+        }
+        ul {
+            display: flex;
+            justify-content: space-around;
+            width: 40%;
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+        }
+        h1 {
+            font-weight: bold;
+            font-size: 30px;
+        }
+        p {
+            line-height: 25px;
+        }
+        .container {
+            margin: 0 auto;
+            width: 1024px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header {
+            padding: 35px 0;
+        }
+        header .container{
+            .ico {
+                display: flex;
+                align-items: center;
+            }
+            .texto {
+                margin-left: 10px;
+            }
+        }
+        #home{
+            background: var(--azul-fundo);
+            color: white;
+            padding: 90px 0;
+        }
+        #home .container {
+            .container {
+                .texto {
+                    width: 470px;
+                }
+            }
+        }
+        #anuncio1 {
+            background: var(--cinza);
+            padding: 40px 0;
+            height: 80;
+            color: white;
+            .container {
+                display: flex;
+                align-items: center;
+                .texto {
+                    width: 600px;
+                }
+            }
+        }
+        #anuncio2 {
+            background: var(--azul-fundo);
+            padding: 40px 0;
+            height: 80;
+            color: white;
+            .container {
+                display: flex;
+                align-items: center;
+                .texto {
+                    width: 600px;
+                }
+            }
+        }
+        #info img{
+            height: 100px;
+        }
+        #info .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 600px;
+            .texto {
+                width: 900px;
+                text-align: center;
+                font-size: 22px;
+            }
+            .opc {
+                width: 100%;
+                display: flex;
+                .item {
+                    width: 33%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    justify-content: space-evenly;
+                    height: 250px;
+                }
+            }
+        }
+        #planos {
+            background-color: var(--branco1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            height: 900px;
+        }
+        #planos img {
+            width: 100px;
+        }
+        #planos .container {
+            display: flex;
+            flex-direction: column;
+            .item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                height: 250px;
+                width: 256px;
+                background: white;
+            }
+        }
+        #planos .item p {
+            width: 150px;
+            font-size: 15px;
+            color: var(--cinz1a);
+        }
+        table {
+            background: var(--branco1);
+            border-radius: 3px;
+            box-shadow: 0 0 50px 10px var(--azul-tabela);
+            .dominio {
+                background: white;
+            }
+            .ofertas {
+                background: white;
+            }
+        }
+        td {
+            height: 60px;
+            text-align: center;
+        }
+        #contato {
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                height: 300px;
+                padding: 50px 0;
+            }
+            .ico {
+                display: flex;
+                align-items: center;
+            }
+        }
+        #contato .texto p {
+            line-height: 2.5;
+            font-weight: normal;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        footer {
+            background: var(--branco2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="ico">
+                <img src="/assets/logo-icone.png" alt="Icon Img" style="width: 80px;">
+                <div class="texto">
+                    <h1>
+                    AlfaTech
+                </h1>
+                <p style="color: var(--azul-fundo);">
+                    Soluções em hospedagem
+                </p>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <a href="#info">INFORMAÇÕES</a>
+                </li>
+                <li>
+                    <a href="#planos">PLANOS</a>
+                </li>
+                <li>
+                    <a href="tabela.html">PREÇOS</a>
+                </li>
+                <li>
+                    <a href="#contato">CONTATO</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section id="home">
+        <div class="container">
+            <div class="texto">
+                <p style="text-align: justify;">
+                    Simples - Fácil de usar - 10x mais rápido!
+                </p>
+                <h1 style="margin: 20px 0; line-height: 1.5;">
+                    O melhor serviço de hospedagem na web para o seu site.
+                </h1>
+                <p style="text-align: justify; width: 400px;">
+                    Obtenha a melhor velocidade para o seu site. Não perca mais clientes por causa de lentidão na sua hospedagem.
+                </p>
+            </div>
+            <img src="/assets/imagem-banner.png" alt="Banner Img">
+        </div>
+    </section>
+    <section id="anuncio1">
+        <div class="container">
+            <div class="texto">
+                <h2>
+                    Hospede o seu site por apenas R$29 por mês.
+                </h2>
+                <p>
+                    Também temos planos gratuitos. Adquira já o seu.
+                </p>
+            </div>
+            <a href="tabela.html" style="padding: 15px; background: var(--azul-fundo); color: white; border-radius: 3px;"><img src="/assets/icone-foguete.png" alt="Foguete Img" style="margin-right: 10px;">TABELA DE PREÇOS</a>
+        </div>
+    </section>
+    <section id="info">
+        <div class="container">
+            <div class="texto">
+                <h2>
+                    Existem diversos serviços de hospedagem de sites. Porque você deve <span style="color: var(--azul-fundo);">nos escolher?</span>
+                </h2>
+            </div>
+            <div class="opc">
+                <div class="item">
+                    <img src="/assets/icone-engrenagens.png" alt="Engrenagem Img">
+                    <h3>
+                        Fácil de configurar
+                    </h3>
+                    <p>
+                        Facilmente configurável em plataformas CMS populares - Wordpress, Joomia ...
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="/assets/cloud-icone.png" alt="Cloud Img">
+                    <h3>
+                        Servidores 100% Online
+                    </h3>
+                    <p>
+                        Serviços que operam 100% do tempo para manter o seu site online...
+                    </p>
+                </div>
+                <div class="item">
+                    <img src="/assets/icone-suporte.png" alt="Suporte Img">
+                    <h3>
+                        Suporte 24/7
+                    </h3>
+                    <p>
+                        Suporte altamente treinado e especializado em soluções de Cloud...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="planos">
+        <div class="container">
+            <div class="texto" style="height: 100px;">
+                <h1 style="font-weight: bold; font-size: 35px;">
+                    Pague <span style="color: var(--azul-fundo);">somente</span> pelo que for usar. Sem cobranças adicionais!
+                </h1>
+            </div>
+            <table> 
+                <thead>
+                    <tr>
+                        <th>
+                            <div class="item">
+                                <h3>
+                                    PESSOAL
+                                </h3>
+                                <img src="/assets/pessoal-icone.png" alt="Pessoal Img">
+                                <p>
+                                    Indicado para uso pessoal
+                                </p>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="item">
+                                <h3>
+                                    PROFISSIONAL
+                                </h3>
+                                <img src="/assets/equipe-icone.png" alt="Profissional Img">
+                                <p>
+                                    Indicado para profissionais de T.I
+                                </p>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="item">
+                                <h3>
+                                    EMPRESARIAL
+                                </h3>
+                                <img src="/assets/empresa-icone.png" alt="Empresa Img">
+                                <p>
+                                    Indicado para empresas
+                                </p>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="item">
+                                <h3>
+                                    BIG TECHS
+                                </h3>
+                                <img src="/assets/big-tech.png" alt="Big Tech Img">
+                                <p>
+                                    Indicado para grandes empresas
+                                </p>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="usuarios">
+                        <td>
+                            <p>1 usuário</p>
+                        </td>
+                        <td>
+                            <p>10 usuários</p>
+                        </td>
+                        <td>
+                            <p>25 usuários</p>
+                        </td>
+                        <td>
+                            <p>50 usuários</p>
+                        </td>
+                    </tr>
+                    <tr class="dominio">
+                        <td>
+                            1 Dominio Grátis
+                        </td>
+                        <td>
+                            2 domínios grátis
+                        </td>
+                        <td>
+                            2 domínios grátis
+                        </td>
+                        <td>
+                            3 domínios grátis
+                        </td>
+                    </tr>
+                    <tr class="espaco">
+                        <td>
+                            200GB SSD espaço
+                        </td>
+                        <td>
+                            500GB SSD espaço
+                        </td>
+                        <td>
+                            1TB SSD espaço
+                        </td>
+                        <td>
+                            2TB SSD espaço
+                        </td>
+                    </tr>
+                    <tr class="ofertas">
+                        <td>
+                            Ofertas especiais
+                        </td>
+                        <td>
+                            Ofertas especiais
+                        </td>
+                        <td>
+                            Ofertas especiais
+                        </td>
+                        <td>
+                            Ofertas especiais
+                        </td>
+                    </tr>
+                    <tr class="suporte">
+                        <td>
+                            Suporte ilimitado
+                        </td>
+                        <td>
+                            Suporte ilimitado
+                        </td>
+                        <td>
+                            Suporte ilimitado
+                        </td>
+                        <td>
+                            Suporte ilimitado 
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section id="anuncio2">
+        <div class="container">
+            <div class="texto">
+                <h2>
+                    Mais de 20.000 pessoas confiam na Spark!<br> Seja um deles você também!
+                </h2>
+            </div>
+            <a href="tabela.html" style="padding: 15px; background: var(--cinza); color: white; border-radius: 3px;"><img src="/assets/icone-foguete.png" alt="Foguete Img" style="margin-right: 10px;">TABELA DE PREÇOS</a>
+        </div>
+    </section>
+    <section id="contato">
+        <div class="container">
+            <div class="ico">
+                <img src="/assets/logo-icone.png" alt="Icon Img" style="width: 80px;">
+                <div class="texto">
+                    <h1>
+                        AlfaTech
+                    </h1>
+                    <p style="color: var(--azul-fundo);">
+                       Soluções em hospedagem
+                    </p>
+                </div>
+            </div>
+            <div class="texto">
+                <p>
+                    Telefone & Whatsapp: (21) 99999-5555
+                </p>
+                <p>
+                    E-mail: suporte@alfatech.com
+                </p>
+                <p>
+                    Endereço: Av Ayrton Senna, 3000 - Barra da Tijuca - Rio de Janeiro
+                </p>
+                <p>
+                    © AlfaTech - Soluções em hospedagem - Todos os direitos reservados
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>
+            Desenvolvido por <span style="color: var(--azul-fundo);">Majuste & Renan</span>
+        </p>
+    </footer>
+</body>
+</html>
